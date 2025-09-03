@@ -1,14 +1,19 @@
-# Nerfies
+# MMSearch-Plus
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This website is adapted from [Nerfies](https://nerfies.github.io/).
 
-If you find Nerfies useful for your work please cite:
+This is the repository that contains source code for the [MMSearch-Plus website](https://mmsearchplus.github.io).
+
+If you find MMSearch-Plus useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@misc{tao2025mmsearchplussimplechallengingbenchmark,
+      title={MMSearch-Plus: A Simple Yet Challenging Benchmark for Multimodal Browsing Agents}, 
+      author={Xijia Tao and Yihua Teng and Xinxing Su and Xinyu Fu and Jihao Wu and Chaofan Tao and Ziru Liu and Haoli Bai and Rui Liu and Lingpeng Kong},
+      year={2025},
+      eprint={2508.21475},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2508.21475}, 
 }
 ```
 

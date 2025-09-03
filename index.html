@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="MMSearch-Plus is a challenging benchmark for multimodal browsing agents to support provenance-aware search.">
+  <meta name="keywords" content="MMSearch-Plus, provenance-aware search, multimodal browsing agents">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>MMSearch-Plus: Benchmarking Provenance-Aware Search For Multimodal Browsing Agents</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -20,7 +20,7 @@
     gtag('js', new Date());
 
     gtag('config', 'G-PYVRSFMDRL');
-  </script>
+  </script> -->
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -52,33 +52,25 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+      <a class="navbar-item" href="#abstract">
+        Abstract
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
+      <a class="navbar-item" href="#leaderboard">
+        Leaderboard
+      </a>
+      <a class="navbar-item" href="#dataset">
+        Dataset
+      </a>
+      <a class="navbar-item" href="#exp-results">
+        Results
+      </a>
+      <!-- <a class="navbar-item" href="#concurrent-work">
+        Concurrent Work -->
+      </a>
+      <a class="navbar-item" href="#BibTeX">
+        Citation
+      </a>
     </div>
-
   </div>
 </nav>
 
@@ -88,39 +80,48 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title"><img src="static/images/logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> MMSearch-Plus: Benchmarking Provenance-Aware Search For Multimodal Browsing Agents</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://xijia-tao.github.io">Xijia Tao*</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              Yihua Teng*<sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              Xinxing Su*<sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              Xinyu Fu<sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              Jihao Wu<sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              Chaofan Tao<sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              Ziru Liu<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Haoli Bai<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Rui Liu†<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ikekonglp.github.io/">Lingpeng Kong†</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>The University of Hong Kong,</span>
+            <span class="author-block"><sup>2</sup>Huawei Inc.</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/pdf/2508.21475"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,7 +130,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/2508.21475"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -138,7 +139,7 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -146,25 +147,25 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/mmsearch-plus/MMSearch-Plus"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                <a href="https://huggingface.co/datasets/mmsearch-plus/MMSearch-Plus"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Data (Coming Soon)</span>
                   </a>
             </div>
 
@@ -175,122 +176,41 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
 
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
+<section class="section" id="abstract">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+          <!-- <p>
+            Multimodal browsing agents face significant challenges when required to provide provenance for their search results, particularly in scenarios where users need to verify information sources and understand the reasoning behind retrieved content. Current benchmarks primarily focus on end-to-end task performance without adequately evaluating agents' ability to provide transparent, traceable search processes.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            We introduce <strong>MMSearch-Plus</strong>, a comprehensive benchmark designed to evaluate provenance-aware search capabilities in multimodal browsing agents. Our benchmark encompasses diverse content categories including geography, sports, academia, film/TV, technology, games, vlogs, and music, with questions requiring both spatial and temporal reasoning across multiple modalities.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Through extensive evaluation of state-of-the-art models including o3, Gemini-2.5-Pro, GPT-5, and Qwen-2.5-VL-72B-Instruct across different search modes (without search, image search, and full rollout), we demonstrate the substantial challenges posed by provenance-aware multimodal search. Our results reveal significant performance gaps and provide insights into the reasoning trajectories and error patterns of current multimodal browsing agents.
+          </p> -->
+          <p>
+            Large multimodal language models (MLLMs) are increasingly deployed as web agents, yet many multimodal browsing benchmarks can be solved by shallow, fixed workflows that lean on high-recall image search and nearby text—masking the genuinely multimodal challenges of fine-grained visual reasoning, provenance verification, and long-horizon tool use.
           </p>
+          <p>
+            We introduce <strong>MMSearch-Plus</strong>, a benchmark of 311 tasks that highly demands multimodal understanding while preserving the difficulty profile of strong text-only browsing suites. Each item is constructed to contain multiple weak, localized visual signals that must be extracted, propagated through iterative text–image search, and cross-validated under retrieval noise before answering. Our curation procedure, Spatial–Temporal Extrapolation, seeds questions whose answers require extrapolating from spatial cues (micro-text, part-level appearance, layouts, signage) and temporal traces (broadcast overlays, seasonal context) to out-of-image facts such as events, dates, and venues.
+          </p>
+          <p>
+            We provide a model-agnostic agent framework with browsing tools, and evaluate a range of closed and open MLLMs. The strongest agent (o3) attains 15.1% without search and 36.0% accuracy with rollout under our framework, while a strong open-source model (Qwen-2.5-VL-72B-Instruct) achieves 0.0% without search and 6.9% after 20 rounds of search. Beyond answer accuracy, we assess bounding-box production and cropped-image search, and conduct an error analysis that surfaces failures in source verification, part-based reasoning, and long-horizon planning.
+          </p>
+          
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -298,145 +218,592 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
 
-
 <section class="section">
-  <div class="container is-max-desktop">
-
+  <div class="container">
+    
     <div class="columns is-centered">
+      <div class="column is-full has-text-centered content">
 
-      <!-- Visual Effects. -->
-      <div class="column">
+        <h2 class="title is-3" id="leaderboard">Leaderboard</h2>
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+          <p class="mt-3">End-to-end results on the MMSearch<sup>+</sup> benchmark, across search modes. All numbers are accuracy (%).
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
+              <table class="js-sort-table" id="results">
+                <thead>
+                  <tr>
+                    <th rowspan="2" style="vertical-align: middle;"><strong>Model / Search Mode</strong></th>
+                    <th rowspan="2" style="vertical-align: middle;"><strong><u>Avg</u></strong></th>
+                    <th colspan="8" style="vertical-align: middle;"><strong>By Category</strong></th>
+                    <th colspan="2" style="vertical-align: middle;"><strong>Difficulty</strong></th>
+                  </tr>
+                  <tr>
+                    <th><strong>Geo.</strong></th>
+                    <th><strong>Sports</strong></th> 
+                    <th><strong>Acad.</strong></th>
+                    <th><strong>Film/TV</strong></th>
+                    <th><strong>Tech</strong></th> 
+                    <th><strong>Games</strong></th>
+                    <th><strong>Vlog</strong></th>
+                    <th><strong>Music</strong></th> 
+                    <th><strong>Easy</strong></th>
+                    <th><strong>Hard</strong></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Closed-source LMMs -->
+                  <tr style="background-color: #f5f5f5;">
+                    <td colspan="11"><strong>Closed-source LMMs</strong></td>
+                  </tr>
+                  <tr>
+                    <td><b class="">o3 (2025-04-16)</b></td>
+                    <td colspan="10"></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Without Search</td>
+                    <td>15.1</td>
+                    <td>31.2</td>
+                    <td>14.8</td>
+                    <td>6.0</td>
+                    <td>17.5</td>
+                    <td>13.9</td>
+                    <td>3.2</td>
+                    <td>5.3</td>
+                    <td>11.8</td>
+                    <td>50.0</td>
+                    <td>0.0</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Image Search</td>
+                    <td>19.3</td>
+                    <td>28.1</td>
+                    <td>14.8</td>
+                    <td>18.0</td>
+                    <td>30.0</td>
+                    <td>22.2</td>
+                    <td>3.2</td>
+                    <td>5.3</td>
+                    <td>17.6</td>
+                    <td>63.8</td>
+                    <td>0.0</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Full Rollout 🥇</b></td>
+                    <td><b>36.0</b></td>
+                    <td>35.9</td>
+                    <td>24.1</td>
+                    <td>50.0</td>
+                    <td>42.5</td>
+                    <td>44.4</td>
+                    <td>16.1</td>
+                    <td>42.1</td>
+                    <td>29.4</td>
+                    <td>54.3</td>
+                    <td>28.1</td>
+                  </tr>
+                  <tr>
+                    <td><b class="">Gemini-2.5-Pro</b></td>
+                    <td colspan="10"></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Without Search</td>
+                    <td>10.6</td>
+                    <td>15.6</td>
+                    <td>11.1</td>
+                    <td>6.0</td>
+                    <td>12.5</td>
+                    <td>13.9</td>
+                    <td>0.0</td>
+                    <td>15.8</td>
+                    <td>5.9</td>
+                    <td>35.1</td>
+                    <td>0.0</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Image Search</td>
+                    <td>16.4</td>
+                    <td>26.6</td>
+                    <td>11.1</td>
+                    <td>18.0</td>
+                    <td>20.0</td>
+                    <td>16.7</td>
+                    <td>3.2</td>
+                    <td>0.0</td>
+                    <td>23.5</td>
+                    <td>54.3</td>
+                    <td>0.0</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Full Rollout 🥈</b></td>
+                    <td><b>23.8</b></td>
+                    <td>39.1</td>
+                    <td>14.8</td>
+                    <td>12.0</td>
+                    <td>27.5</td>
+                    <td>33.3</td>
+                    <td>6.5</td>
+                    <td>26.3</td>
+                    <td>29.4</td>
+                    <td>46.8</td>
+                    <td>13.8</td>
+                  </tr>
+                  <tr>
+                    <td><b class="">GPT-5</b></td>
+                    <td colspan="10"></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Without Search</td>
+                    <td>10.3</td>
+                    <td>21.9</td>
+                    <td>7.4</td>
+                    <td>4.0</td>
+                    <td>7.5</td>
+                    <td>8.3</td>
+                    <td>0.0</td>
+                    <td>5.3</td>
+                    <td>15.8</td>
+                    <td>27.7</td>
+                    <td>2.8</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Image Search 🥉</b></td>
+                    <td><b>16.4</b></td>
+                    <td>25.0</td>
+                    <td>11.1</td>
+                    <td>14.0</td>
+                    <td>22.5</td>
+                    <td>19.4</td>
+                    <td>3.2</td>
+                    <td>0.0</td>
+                    <td>29.4</td>
+                    <td>50.0</td>
+                    <td>1.8</td>
+                  </tr>
+                  <!-- Open-source LMMs -->
+                  <tr style="background-color: #f5f5f5;">
+                    <td colspan="11"><strong>Open-source LMMs</strong></td>
+                  </tr>
+                  <tr>
+                    <td><b class="">Qwen-2.5-VL-72B-Instruct</b></td>
+                    <td colspan="10"></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Without Search</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="">Image Search</b></td>
+                    <td><b>13.5</b></td>
+                    <td>20.3</td>
+                    <td>7.4</td>
+                    <td>18.0</td>
+                    <td>17.5</td>
+                    <td>11.1</td>
+                    <td>3.2</td>
+                    <td>0.0</td>
+                    <td>23.5</td>
+                    <td>41.5</td>
+                    <td>1.4</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Full Rollout</td>
+                    <td>6.1</td>
+                    <td>9.5</td>
+                    <td>7.4</td>
+                    <td>4.0</td>
+                    <td>5.0</td>
+                    <td>2.8</td>
+                    <td>3.2</td>
+                    <td>5.3</td>
+                    <td>11.8</td>
+                    <td>17.0</td>
+                    <td>1.4</td>
+                  </tr>
+                </tbody>
+              </table>
 
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
+          <i>Models are organized by closed-source and open-source LMMs. Each model shows results for different search modes: Without Search, Image Search, and Full Rollout. The best performing configuration for each model is highlighted with medals.</i>
 
         </div>
+
       </div>
     </div>
-    <!--/ Matting. -->
 
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+  </div>
+</section>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small" id="dataset">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1">
+      <img src="static/images/logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+      MMSearch-Plus Dataset
+  </h1>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p> -->
+            
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+        <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            Recent advances in large multimodal language models (MLLMs) have enabled them to act as capable browsing agents, yet existing multimodal benchmarks such as MMSearch can often be solved through relatively fixed workflows that require little genuine multimodal reasoning. Many current benchmarks heavily rely on external image search where the MLLM primarily orchestrates rather than performs deep visual reasoning—when search engines retrieve highly relevant images, even unimodal LLMs can frequently answer by reasoning over accompanying text alone. This occurs because a single strong image search can surface pages whose surrounding text already contains the answer, making image search tools and MLLMs partially interchangeable as information sources.
           </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+          <p>
+            In contrast, recent text-only browsing benchmarks like <strong>BrowseComp</strong> emphasize persistence and creative, multi-step search for hard-to-find, entangled information, achieving much lower success rates (GPT-4o scores below 1% in direct-answer settings and under 2% even with browsing tools). Building on these insights, <strong>MMSearch-Plus</strong> introduces a BrowseComp-style multimodal benchmark that combines the persistence and high-reasoning demands of challenging text browsing with truly multimodal workflows that cannot be reduced to simple search-and-retrieve patterns.
+          </p>
+
+          <p>
+            Our benchmark targets challenging scenarios that require: (1) <strong>fine-grained, exhaustive visual reasoning</strong> that compels models to mine subtle, localized cues rather than rely on a single dominant entity; (2) <strong>provenance and source verification under retrieval noise</strong>—discriminating authentic sources when image results are conflicting and validating images embedded in webpages; and (3) <strong>long, tool-augmented reasoning chains</strong> with systematic cross-modal evidence gathering and resilience to near-duplicates. Unlike existing benchmarks where answers can often be read directly from prompts or images, MMSearch-Plus requires extrapolating from spatial cues (micro-text, layouts, uniforms, signage) and temporal traces (broadcast overlays, seasonal context) to identify events, dates, or locations not explicitly present.
+          </p>
+
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/teaser.jpg" alt="Pipeline of MMSearch-Plus" width="100%"/>
+              <p>Example MMSearch-Plus item demonstrating our BrowseComp-style approach. Given a 2025 concert photo and the query "What was the singer's performance time?", the agent must extract multiple localized cues—micro-text/lyrics, performer identification, festival/brand signage, and distinctive stage props—then issue targeted iterative searches to (i) identify the artist/outfit, (ii) resolve the specific event and venue, and (iii) cross-validate official schedules to obtain the exact performance time. This exemplifies our emphasis on fine-grained multimodal reasoning with rigorous provenance verification under retrieval noise.</p>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
           </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
+          
+          <!-- data examples -->
+          <div id="examples-carousel" class="carousel results-carousel">
+          <div class="carousel-item">
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/examples/ex6.png" alt="snooker example" style="max-width: 100%; height: 400px;"/>
+                <p><strong>Question</strong>: What are the numbers in the score column that are blurred out in the picture?</p>
+                <p><strong>Answer</strong>: 0 4 (11) 2 16</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/examples/ex1.png" alt="newspaper example" style="max-width: 100%; height: 400px;"/>
+                <p><strong>Question</strong>: What's the date and page of the newspaper?</p>
+                  <p><strong>Answer</strong>: May 10, 2007, Page 5A</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/examples/ex2.png" alt="esports example" style="max-width: 100%; height: 400px;"/>
+                <p><strong>Question</strong>: In this team fight, who was killed first?</p>
+                <p><strong>Answer</strong>: WBG TheShy!</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/examples/ex3.png" alt="music example" style="max-width: 100%; height: 400px;"/>
+                <p><strong>Question</strong>: Who are the performers?</p>
+                <p><strong>Answer</strong>: Ebène String Quartet and Damien Bachmann</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/examples/ex4.png" alt="tv show example" style="max-width: 100%; height: 400px;"/>
+                <p><strong>Question</strong>: From which show and episode is this?</p>
+                <p><strong>Answer</strong>: Street Food (2019) Season 1 Episode 7</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/examples/ex5.png" alt="academic paper example" style="max-width: 100%; height: 400px;"/>
+                <p><strong>Question</strong>: What is the title of this paper?</p>
+                <p><strong>Answer</strong>: MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+          <p>
+            Our 311-task benchmark spans diverse domains including geography, sports, academia, film/TV, technology, games, vlogs, and music. Each item is systematically curated using our <strong>Spatial-Temporal Extrapolation</strong> procedure to ensure genuine multimodal difficulty that matches the persistence demands of challenging text-only browsing benchmarks.
+          </p>
+          <!-- <p>
+            You can download the dataset on <a href="https://huggingface.co/datasets/mmsearch-plus/MMSearch-Plus" target="_blank">Hugging Face Dataset</a>
+          </p> -->
+
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-variable is-8">
+      <div class="column is-half">
+        <div class="box" style="height: 400px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="content has-text-centered">
+            <img src="static/images/statistics.png" alt="data-overview" style="max-width: 60%; max-height: 300px; object-fit: contain;"/>
+            <p> 
+              Key statistics of <img src="static/images/logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+              <span>MMSearch-Plus</span>.<br/>
+            </p> 
           </div>
         </div>
-        <br/>
-        <!--/ Interpolating. -->
+      </div>
+      <div class="column is-half">
+        <div class="box" style="height: 400px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="content has-text-centered">
+            <img src="static/images/category_chart.png" alt="data-composition" style="max-width: 90%; max-height: 300px; object-fit: contain;"/>
+            <p>
+                Category distribution of <img src="static/images/logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+                <span>MMSearch-Plus</span>.<br/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+    
+    <div class="columns is-centered m-6">
+      <div class="column is-four-fifths has-text-centered content">
+        <h2 class="title is-3">Data Curation Method: Spatial Temporal Extrapolation</h2>
+
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/spatial-temporal.png" alt="" width="55%"/>
+            <p>Overview of data curation strategy.</p>
+          </div>
+        </div>
+
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            A central challenge in BrowseComp-like benchmarks arises from the large intermediate search space
+            induced by soft, fuzzy constraints. This requires agents to perform non-trivial cross-validation and
+            identify the correct target. In designing our benchmark, rather than remixing existing text-only
+            datasets, we aim to construct problems that naturally expand the search space during multimodal information seeking, thereby testing an agent's ability for strategic planning and uncertainty-aware
+            reasoning in dynamic environments.
+          </p>
+          <p>
+            Inspired by Geoguessr-style tasks, our problems are anchored on real-world events. Agents must
+            piece together fragmented visual information to identify the underlying source event. Task difficulty
+            is modulated by varying the richness of both visual clues and textual context. Even a single visual fragment can expand the search space dramatically, requiring careful comparison with retrieved
+            content and cross-validation against other multimodal evidence. In more difficult cases, this mirrors human cognition: the agent must iteratively generate hypotheses, verify them against internal
+            knowledge or retrieved content, and refine its reasoning chain across interleaved text and images.
+            Such processes result in extended trajectories that demand robust contextual understanding.
+          </p>
+          <p>
+            Once an event is identified, we formulate
+            questions that probe its metadata or chain
+            together multi-hop queries. To further
+            elevate difficulty, we introduce <strong>Spatial-Temporal Extrapolation</strong>. Instead of asking what is directly visible, we query
+            what is contextually implied but physically absent, compelling reasoning beyond
+            the pixels to reconstruct the broader event.
+            Spatial extrapolation targets unseen entities—individuals off-screen, facing away,
+            or partially obscured—while temporal extrapolation probes events preceding or following the depicted moment. This design
+            forces agents to first localize the event precisely (e.g., time, match, or episode), and
+            then retrieve and reason over wider contextual knowledge from diverse sources.
           </p>
         </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
 
       </div>
     </div>
-    <!--/ Animation. -->
+  </div>
 
+  <div class="columns is-centered m-6">
+    <div class="column is-full has-text-centered content" id="exp-results">
+      <h2 class="title is-3">Experimental Results</h2>
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+      <div class="columns is-variable is-8">
+        <div class="column is-half">
+          <div class="box" style="height: 400px; display: flex; flex-direction: column; justify-content: center;">
+            <div class="content has-text-centered">
+              <img src="static/images/search_mode.png" alt="Bar plot of performance by search mode" style="max-width: 100%; max-height: 300px; object-fit: contain;"/>
+              <p>Bar plot of performance by search mode.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="box" style="height: 400px; display: flex; flex-direction: column; justify-content: center;">
+            <div class="content has-text-centered">
+              <img src="static/images/error_types.png" alt="Human annotated error types of Gemini-2.5-Pro" style="max-width: 100%; max-height: 300px; object-fit: contain;"/>
+              <p>Human annotated error types of Gemini-2.5-Pro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
 
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-four-fifths has-text-centered content">
+      <h3 class="title is-3">Errorneous Case Analysis</h3>
+
+      <div id="error-carousel" class="carousel results-carousel">
+      <div class="carousel-item">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/case-study-000.png" alt="Case study 1" style="max-width: 100%; height: auto;"/>
+            <p><strong>Key Information Not Extracted</strong>: This case demonstrates how the summarizer fails to extract critical facts from retrieved pages, leading to incomplete or inaccurate responses. The error occurs when important information is available in the source material but gets omitted during the summarization process.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/case-study-001.png" alt="Case study 2" style="max-width: 100%; height: auto;"/>
+            <p><strong>Relevance Not Verified</strong>: In this example, while the retrieved page appears visually relevant, it contains information about the wrong event (e.g., a 2021 snooker match instead of a 2024 match). This highlights the importance of temporal verification in search results.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/case-study-002.png" alt="Case study 3" style="max-width: 100%; height: auto;"/>
+            <p><strong>Question Misunderstood</strong>: This case illustrates how the browsing agent can misinterpret multimodal context and provide premature answers without fully understanding the query requirements, leading to incorrect responses.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/case-study-003.png" alt="Case study 4" style="max-width: 100%; height: auto;"/>
+            <p><strong>May Require Video Understanding</strong>: This example shows a limitation where crucial information exists only in video narration. Our current search agent framework, which doesn't process video input, cannot access this information, highlighting a key area for improvement.</p>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
+    </div>
+  </div>
+  
+  <div class="columns is-centered">
+    <div class="column is-four-fifths has-text-centered content">
+      <h3 class="title is-3">Reasoning Trajectory Analysis</h3>
+      
+      <div class="content has-text-justified mb-5">
+        <p>
+          This section provides an overview of reasoning-trajectory statistics across three MLLMs (o3, Gemini, Qwen). 
+          The analysis examines how different models utilize search capabilities during their reasoning process, 
+          collected in <em>full rollout</em> mode where models have access to both text and image search functions.
+        </p>
+        <p>
+          <strong>Left charts:</strong> Distribution of image search calls and text search calls per trajectory, 
+          showing how each model balances between textual and visual information gathering strategies.
+        </p>
+        <p>
+          <strong>Right charts:</strong> Relationship between assistant word count and the number of search calls, 
+          stratified by correctness (correct vs. incorrect responses). This reveals patterns in how verbose 
+          reasoning correlates with search behavior and ultimate accuracy across different models.
+        </p>
+      </div>
 
+    <div id="trajectory-carousel" class="carousel results-carousel">
+      <div class="carousel-item">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <h4 class="subtitle is-4">o3 Model Analysis</h4>
+            <div class="columns is-centered">
+              <div class="column is-7">
+                <figure class="image">
+                  <img src="static/images/boxen_text_vs_image_calls_by_correctness_o3.png" style="height: 450px;" alt="O3 Box Plot">
+                </figure>
+              </div>
+              <div class="column is-6">
+                <figure class="image">
+                  <img src="static/images/reg_assistant_words_vs_search_calls_by_correctness_o3.png" style="height: 450px;" alt="O3 Point Plot">
+                </figure>
+              </div>
+            </div>
+            <p class="mb-2">o3 is active in making search calls, sometimes reaching the maximum number of calls (20) within a single trajectory.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <h4 class="subtitle is-4">Gemini Model Analysis</h4>
+            <div class="columns is-centered">
+              <div class="column is-7">
+                <figure class="image">
+                  <img src="static/images/boxen_text_vs_image_calls_by_correctness_gemini.png" style="height: 450px;" alt="Gemini Box Plot">
+                </figure>
+              </div>
+              <div class="column is-6">
+                <figure class="image">
+                  <img src="static/images/reg_assistant_words_vs_search_calls_by_correctness_gemini.png" style="height: 450px;" alt="Gemini Point Plot">
+                </figure>
+              </div>
+            </div>
+            <p class="mb-2">Gemini-2.5-Pro is conservative in making search calls and has a relatively stable number of calls across trajectories. The model gets more verbose with reasoning as the trajectory goes on.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <h4 class="subtitle is-4">Qwen-2.5-VL-72B-Instruct Model Analysis</h4>
+            <div class="columns is-centered">
+              <div class="column is-7">
+                <figure class="image">
+                  <img src="static/images/boxen_text_vs_image_calls_by_correctness_qwen.png" style="height: 450px;" alt="Qwen Box Plot">
+                </figure>
+              </div>
+              <div class="column is-6">
+                <figure class="image">
+                  <img src="static/images/reg_assistant_words_vs_search_calls_by_correctness_qwen.png" style="height: 450px;" alt="Qwen Point Plot">
+                </figure>
+              </div>
+            </div>
+            <p class="mb-2">Qwen sometimes did not formulate valid image-search calls and occasionally spiking to many calls within a single trajectory, while text-search calls remain low.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="concurrent-work">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Concurrent Work</h2>
+    <div class="content has-text-justified">
+      <p>
+        During our work, we became aware of some related efforts that explore similar multimodal browsing challenges, though with different approaches and focus areas.
+      </p>
+      <p>
+        <strong>BrowseComp-VL</strong> (<a href="https://arxiv.org/abs/2508.05748" target="_blank">Geng et al., 2025</a>) takes an interesting approach by expanding the difficulty mainly through text search space in a BrowseComp-like manner. However, the image component often simplifies to a single identifiable entity that can be quickly found and used primarily for initial anchoring. More specifically, BrowseComp-VL is constructed by first creating multi-hop text QA tasks (following the BrowseComp style with entity obfuscation) and then converting them to visual QA by replacing explicit entity mentions with images retrieved from the web. This design means that many problems essentially become text search and webpage navigation tasks after an initial visual recognition step, rather than requiring sustained fine-grained visual reasoning throughout the process.
+      </p>
+      <p>
+        Another related effort is <strong>MM-BrowseComp</strong> (<a href="https://arxiv.org/abs/2508.13186" target="_blank">Li et al., 2025</a>), which also explores multimodal browsing capabilities. Our work differs in several key aspects: (a) our data sources and curation methodology focus on spatial-temporal extrapolation from real-world events, (b) we provide a general search framework that can support any multimodal large language model, and (c) we conduct a detailed analysis of whether "thinking with images" and cropping strategies actually help current MLLMs excel on our benchmark.
+      </p>
+      <p>
+        While these concurrent works make valuable contributions to the field, our MMSearch-Plus benchmark is uniquely designed to require sustained multimodal reasoning throughout the entire search process, rather than relegating vision to an initial recognition step.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -444,11 +811,14 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@misc{tao2025mmsearchplussimplechallengingbenchmark,
+      title={MMSearch-Plus: A Simple Yet Challenging Benchmark for Multimodal Browsing Agents}, 
+      author={Xijia Tao and Yihua Teng and Xinxing Su and Xinyu Fu and Jihao Wu and Chaofan Tao and Ziru Liu and Haoli Bai and Rui Liu and Lingpeng Kong},
+      year={2025},
+      eprint={2508.21475},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2508.21475}, 
 }</code></pre>
   </div>
 </section>
@@ -456,7 +826,7 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
+    <!-- <div class="content has-text-centered">
       <a class="icon-link"
          href="./static/videos/nerfies_paper.pdf">
         <i class="fas fa-file-pdf"></i>
@@ -464,21 +834,14 @@
       <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
-    </div>
+    </div> -->
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
+            This website is adapted from <a href="https://nerfies.github.io">Nerfies</a>, licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
           </p>
         </div>
       </div>
