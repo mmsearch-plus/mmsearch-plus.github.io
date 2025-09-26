@@ -481,10 +481,16 @@
           <p>
             Our benchmark targets challenging scenarios that require: (1) <strong>fine-grained, exhaustive visual reasoning</strong> that compels models to mine subtle, localized cues rather than rely on a single dominant entity; (2) <strong>provenance and source verification under retrieval noise</strong>—discriminating authentic sources when image results are conflicting and validating images embedded in webpages; and (3) <strong>long, tool-augmented reasoning chains</strong> with systematic cross-modal evidence gathering and resilience to near-duplicates. Unlike existing benchmarks where answers can often be read directly from prompts or images, MMSearch-Plus requires extrapolating from spatial cues (micro-text, layouts, uniforms, signage) and temporal traces (broadcast overlays, seasonal context) to identify events, dates, or locations not explicitly present.
           </p>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/teaser.png" alt="Pipeline of MMSearch-Plus" width="100%"/>
+              <p>Three multimodal reasoning paradigms: 1. <strong>Without search</strong>: an MLLM reasons with its internal knowledge to answer a factual visual question (VQA); 2. <strong>Whole image search only</strong>: an MLLM combines its internal knowledge and the provided search results of an VQA's image; 3. <strong>MMSearch-Plus agentic framework</strong>: an MLLM can call a set of visual and search tools freely to extracts fine-grained visual clues and search with precision.</p>
+            </div>
+          </div>
 
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/teaser.jpg" alt="Pipeline of MMSearch-Plus" width="100%"/>
+              <img src="static/images/real-teaser.jpg" alt="Pipeline of MMSearch-Plus" width="100%"/>
               <p>Example MMSearch-Plus item demonstrating our BrowseComp-style approach. Given a 2025 concert photo and the query "What was the singer's performance time?", the agent must extract multiple localized cues—micro-text/lyrics, performer identification, festival/brand signage, and distinctive stage props—then issue targeted iterative searches to (i) identify the artist/outfit, (ii) resolve the specific event and venue, and (iii) cross-validate official schedules to obtain the exact performance time. This exemplifies our emphasis on fine-grained multimodal reasoning with rigorous provenance verification under retrieval noise.</p>
             </div>
           </div>
@@ -811,14 +817,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{tao2025mmsearchplussimplechallengingbenchmark,
-      title={MMSearch-Plus: A Simple Yet Challenging Benchmark for Multimodal Browsing Agents}, 
-      author={Xijia Tao and Yihua Teng and Xinxing Su and Xinyu Fu and Jihao Wu and Chaofan Tao and Ziru Liu and Haoli Bai and Rui Liu and Lingpeng Kong},
-      year={2025},
-      eprint={2508.21475},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2508.21475}, 
+    <pre><code>@article{tao2025mmsearch,
+  title={MMSearch-Plus: A Simple Yet Challenging Benchmark for Multimodal Browsing Agents},
+  author={Tao, Xijia and Teng, Yihua and Su, Xinxing and Fu, Xinyu and Wu, Jihao and Tao, Chaofan and Liu, Ziru and Bai, Haoli and Liu, Rui and Kong, Lingpeng},
+  journal={arXiv preprint arXiv:2508.21475},
+  year={2025}
 }</code></pre>
   </div>
 </section>
