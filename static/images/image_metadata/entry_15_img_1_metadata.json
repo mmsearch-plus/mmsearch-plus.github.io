@@ -1,0 +1,374 @@
+{
+  "entry_index": 15,
+  "image_key": "img_1",
+  "num_images": 1,
+  "requires_image_understanding": false,
+  "is_valid": true,
+  "extraction_timestamp": "2025-09-23T19:55:43.663379",
+  "question": "What is the title of this paper?",
+  "answer": [
+    "MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models"
+  ],
+  "choices": [
+    "Multimodal Language Models: A SurveyCross-Modal Learning in AIBenchmarking AI Models for Language ProcessingResolving Ambiguities in Multilingual Texts"
+  ],
+  "question_zh": "这篇论文的标题是什么？",
+  "answer_zh": [
+    "MUCAR: 为多模态大型语言模型进行多语言跨模态歧义解析的基准测试"
+  ],
+  "regex": "(?i)\\b(?:mucar:\\s*benchmarking\\s*multilingual\\s*cross-modal\\s*ambiguity\\s*resolution\\s*for\\s*multimodal\\s*large\\s*language\\s*models)\\b",
+  "text_criteria": "Any answer that accurately provides the full title of the paper 'MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models' is correct.",
+  "original_filename": "arxiv_vqa_results_20250623_170545_selected_qa.json",
+  "screenshots_dir": "arxiv_figures",
+  "video_url": "nan",
+  "time_points": [],
+  "category": "nan",
+  "search_query": "nan",
+  "question_type": "paper_identification",
+  "source": "fallback",
+  "arxiv_id": "2506.17046v1",
+  "content_keywords": "",
+  "reasoning": "",
+  "processed_at": "2025-06-26 13:05:51",
+  "model_used": "gpt-4o",
+  "original_image_paths": [
+    "arxiv_figures/cs.CL/2506.17046v1_figure.png"
+  ],
+  "masked_image_paths": [
+    "arxiv_figures/cs.CL_masked/2506.17046v1_figure.png"
+  ],
+  "annotation_count": 18,
+  "annotation_summary": {
+    "total_rectangles": 18,
+    "annotation_labels": [
+      "矩形"
+    ],
+    "has_descriptions": false
+  },
+  "annotations": [
+    {
+      "index": 1,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          64.0,
+          18.61111111111111
+        ],
+        [
+          995.9444444444446,
+          96.38888888888889
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          144.05594405594405,
+          150.34965034965035
+        ],
+        [
+          473.42657342657344,
+          353.84615384615387
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          751.7482517482517,
+          150.34965034965035
+        ],
+        [
+          1081.118881118881,
+          355.24475524475525
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          177.51937984496124,
+          359.68992248062017
+        ],
+        [
+          437.2093023255814,
+          391.47286821705427
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          234.49612403100775,
+          118.9922480620155
+        ],
+        [
+          384.1085271317829,
+          146.51162790697674
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          836.3970588235294,
+          117.6470588235294
+        ],
+        [
+          989.3382352941176,
+          147.05882352941177
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          778.6764705882352,
+          358.8235294117647
+        ],
+        [
+          1049.6323529411764,
+          393.0147058823529
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          395.7264957264957,
+          425.21367521367523
+        ],
+        [
+          834.1880341880343,
+          464.52991452991455
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          37.65182186234818,
+          492.7125506072874
+        ],
+        [
+          594.331983805668,
+          698.3805668016194
+        ]
+      ]
+    },
+    {
+      "index": 10,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          647.2103004291845,
+          492.27467811158795
+        ],
+        [
+          1198.6842105263158,
+          700.6578947368421
+        ]
+      ]
+    },
+    {
+      "index": 11,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          389.0510948905109,
+          724.0875912408759
+        ],
+        [
+          850.3649635036496,
+          764.2335766423357
+        ]
+      ]
+    },
+    {
+      "index": 12,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          35.03649635036496,
+          783.2116788321167
+        ],
+        [
+          592.7007299270073,
+          991.2408759124087
+        ]
+      ]
+    },
+    {
+      "index": 13,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          643.7956204379561,
+          781.0218978102189
+        ],
+        [
+          1200.8455284552845,
+          1015.4471544715448
+        ]
+      ]
+    },
+    {
+      "index": 14,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          441.3333333333333,
+          1030.0
+        ],
+        [
+          831.3333333333334,
+          1069.3333333333333
+        ]
+      ]
+    },
+    {
+      "index": 15,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          36.0,
+          1090.0
+        ],
+        [
+          591.3333333333334,
+          1266.6666666666667
+        ]
+      ]
+    },
+    {
+      "index": 16,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          35.333333333333336,
+          1270.0
+        ],
+        [
+          276.6666666666667,
+          1296.6666666666667
+        ]
+      ]
+    },
+    {
+      "index": 17,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          642.0,
+          1090.0
+        ],
+        [
+          1200.6666666666667,
+          1238.6666666666667
+        ]
+      ]
+    },
+    {
+      "index": 18,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          641.3333333333334,
+          1270.0
+        ],
+        [
+          896.0,
+          1298.6666666666667
+        ]
+      ]
+    }
+  ]
+}

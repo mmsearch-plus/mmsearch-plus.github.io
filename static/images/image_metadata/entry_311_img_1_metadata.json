@@ -1,0 +1,476 @@
+{
+  "entry_index": 311,
+  "image_key": "img_1",
+  "num_images": 1,
+  "requires_image_understanding": false,
+  "is_valid": true,
+  "extraction_timestamp": "2025-09-23T19:56:38.083500",
+  "question": "What was this news about?",
+  "answer": [
+    "2021 National Medical Insurance Catalogue Drug Negotiation Site"
+  ],
+  "choices": [],
+  "question_zh": "这个新闻报道了什么？",
+  "answer_zh": [
+    "2021国家医保目录药物谈判现场"
+  ],
+  "regex": "",
+  "text_criteria": "",
+  "original_filename": "",
+  "screenshots_dir": "",
+  "video_url": "https://www.bilibili.com/video/BV1vR4y147jy?spm_id_from=333.788.recommend_more_video.2&vd_source=2bdff8606e707f1e0357458d29b96431",
+  "time_points": [],
+  "category": "",
+  "search_query": "",
+  "question_type": "",
+  "source": "manual_addition",
+  "arxiv_id": "",
+  "content_keywords": "",
+  "reasoning": "",
+  "processed_at": "2025-08-13 11:39:46",
+  "model_used": "",
+  "original_image_paths": [],
+  "masked_image_paths": [],
+  "annotation_count": 24,
+  "annotation_summary": {
+    "total_rectangles": 24,
+    "annotation_labels": [
+      "矩形"
+    ],
+    "has_descriptions": false
+  },
+  "annotations": [
+    {
+      "index": 1,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          76.2446808510639,
+          49.55319148936175
+        ],
+        [
+          278.37234042553195,
+          137.85106382978728
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          933.6914893617021,
+          58.063829787234084
+        ],
+        [
+          1091.1382978723404,
+          105.936170212766
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          675.1808510638298,
+          110.19148936170217
+        ],
+        [
+          786.8829787234043,
+          147.42553191489364
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1277.3085106382978,
+          57.00000000000006
+        ],
+        [
+          1377.3085106382978,
+          121.89361702127664
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          160.52631578947367,
+          638.578947368421
+        ],
+        [
+          241.66666666666663,
+          677.1754385964912
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          323.6842105263158,
+          636.8245614035087
+        ],
+        [
+          546.9298245614034,
+          679.3684210526316
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          114.91228070175437,
+          758.7543859649122
+        ],
+        [
+          201.75438596491225,
+          792.5263157894736
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          222.80701754385962,
+          762.2631578947368
+        ],
+        [
+          307.8947368421052,
+          788.1403508771929
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          321.3793103448276,
+          684.1379310344828
+        ],
+        [
+          726.8965517241379,
+          748.2758620689656
+        ]
+      ]
+    },
+    {
+      "index": 10,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          326.2068965517241,
+          754.4827586206897
+        ],
+        [
+          1460.0,
+          797.3951369982959
+        ]
+      ]
+    },
+    {
+      "index": 11,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1230.5,
+          222.4761904761905
+        ],
+        [
+          1297.1666666666667,
+          278.42857142857144
+        ]
+      ]
+    },
+    {
+      "index": 12,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          773.3571428571429,
+          251.04761904761907
+        ],
+        [
+          813.8333333333334,
+          287.95238095238096
+        ]
+      ]
+    },
+    {
+      "index": 13,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1024.547619047619,
+          377.2380952380952
+        ],
+        [
+          1085.2619047619048,
+          464.1428571428571
+        ]
+      ]
+    },
+    {
+      "index": 14,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          341.2142857142858,
+          355.80952380952385
+        ],
+        [
+          465.0238095238095,
+          424.8571428571429
+        ]
+      ]
+    },
+    {
+      "index": 15,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          538.8333333333334,
+          330.80952380952385
+        ],
+        [
+          636.452380952381,
+          403.42857142857144
+        ]
+      ]
+    },
+    {
+      "index": 16,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          693.5952380952382,
+          339.1428571428571
+        ],
+        [
+          781.6904761904763,
+          393.9047619047619
+        ]
+      ]
+    },
+    {
+      "index": 17,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          180.50000000000006,
+          127.90909090909095
+        ],
+        [
+          435.04545454545456,
+          295.1818181818182
+        ]
+      ]
+    },
+    {
+      "index": 18,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          203.22727272727278,
+          463.3636363636364
+        ],
+        [
+          83.22727272727279,
+          396.0909090909091
+        ]
+      ]
+    },
+    {
+      "index": 19,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          478.6818181818182,
+          384.2727272727273
+        ],
+        [
+          534.1363636363637,
+          417.90909090909093
+        ]
+      ]
+    },
+    {
+      "index": 20,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          595.0454545454546,
+          468.8181818181818
+        ],
+        [
+          632.3181818181819,
+          555.1818181818181
+        ]
+      ]
+    },
+    {
+      "index": 21,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          550.5,
+          545.1818181818181
+        ],
+        [
+          760.5,
+          608.8181818181818
+        ]
+      ]
+    },
+    {
+      "index": 22,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          974.1363636363636,
+          431.54545454545456
+        ],
+        [
+          1033.2272727272725,
+          463.3636363636364
+        ]
+      ]
+    },
+    {
+      "index": 23,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1053.2272727272725,
+          446.0909090909091
+        ],
+        [
+          1337.7727272727273,
+          680.6363636363636
+        ]
+      ]
+    },
+    {
+      "index": 24,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          90.50000000000006,
+          677.9090909090909
+        ],
+        [
+          311.40909090909093,
+          752.4545454545454
+        ]
+      ]
+    }
+  ]
+}

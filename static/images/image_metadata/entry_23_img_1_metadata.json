@@ -1,0 +1,430 @@
+{
+  "entry_index": 23,
+  "image_key": "img_1",
+  "num_images": 1,
+  "requires_image_understanding": false,
+  "is_valid": true,
+  "extraction_timestamp": "2025-09-23T19:55:31.764075",
+  "question": "What was the final score of the match shown in the image?",
+  "answer": [
+    "13-11"
+  ],
+  "choices": [
+    "10-912-1415-1311-11"
+  ],
+  "question_zh": "图中的比赛最终的比分是什么？",
+  "answer_zh": [
+    "13-11"
+  ],
+  "regex": "(?i)\\b13\\s*-\\s*11\\b",
+  "text_criteria": "Any answer that specifies the final score as 13-11 is correct.",
+  "original_filename": "bilibili_videos.csv",
+  "screenshots_dir": "data/screenshots_bilibili_masked",
+  "video_url": "https://www.bilibili.com/video/BV12Y4y1A7Bf/?spm_id_from=333.337.search-card.all.click",
+  "time_points": [
+    "12'11"
+  ],
+  "category": "体育赛事",
+  "search_query": "大学生飞盘联赛总决赛",
+  "question_type": "",
+  "source": "",
+  "arxiv_id": "",
+  "content_keywords": "",
+  "reasoning": "",
+  "processed_at": "2025-06-26 13:06:16",
+  "model_used": "gpt-4o",
+  "original_image_paths": [
+    "data/screenshots_bilibili_masked/1_731s.png"
+  ],
+  "masked_image_paths": [
+    "data/screenshots_bilibili_masked/1_731s.png"
+  ],
+  "annotation_count": 21,
+  "annotation_summary": {
+    "total_rectangles": 21,
+    "annotation_labels": [
+      "矩形"
+    ],
+    "has_descriptions": false
+  },
+  "annotations": [
+    {
+      "index": 1,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          35.72727272727272,
+          78.81818181818181
+        ],
+        [
+          168.45454545454544,
+          207.90909090909088
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          563.0,
+          111.54545454545453
+        ],
+        [
+          908.4545454545454,
+          355.18181818181813
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          2659.363636363636,
+          77.0
+        ],
+        [
+          2813.9090909090905,
+          262.45454545454544
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          2073.9090909090905,
+          615.1818181818181
+        ],
+        [
+          2190.272727272727,
+          749.7272727272726
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          2067.6470588235293,
+          559.8039215686274
+        ],
+        [
+          2167.6470588235293,
+          600.0
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          2061.7647058823527,
+          775.4901960784314
+        ],
+        [
+          2181.372549019608,
+          805.8823529411765
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          2075.4901960784314,
+          880.3921568627451
+        ],
+        [
+          2178.4313725490197,
+          906.8627450980392
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1975.4901960784314,
+          1069.6078431372548
+        ],
+        [
+          2020.5882352941176,
+          1100.9803921568628
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          2032.3529411764705,
+          1048.0392156862745
+        ],
+        [
+          2085.294117647059,
+          1109.8039215686274
+        ]
+      ]
+    },
+    {
+      "index": 10,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1817.6470588235293,
+          804.9019607843137
+        ],
+        [
+          1982.3529411764705,
+          963.7254901960785
+        ]
+      ]
+    },
+    {
+      "index": 11,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1969.6078431372548,
+          327.45098039215685
+        ],
+        [
+          2147.0588235294117,
+          463.7254901960784
+        ]
+      ]
+    },
+    {
+      "index": 12,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1520.5882352941176,
+          460.78431372549016
+        ],
+        [
+          1638.235294117647,
+          539.2156862745098
+        ]
+      ]
+    },
+    {
+      "index": 13,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1569.6078431372548,
+          549.0196078431372
+        ],
+        [
+          1621.5686274509803,
+          627.4509803921569
+        ]
+      ]
+    },
+    {
+      "index": 14,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1451.9607843137255,
+          930.3921568627451
+        ],
+        [
+          1572.549019607843,
+          1017.6470588235294
+        ]
+      ]
+    },
+    {
+      "index": 15,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1940.625,
+          503.125
+        ],
+        [
+          2204.6875,
+          970.3125
+        ]
+      ]
+    },
+    {
+      "index": 16,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1402.5316455696202,
+          362.0253164556962
+        ],
+        [
+          1696.2025316455695,
+          818.9873417721518
+        ]
+      ]
+    },
+    {
+      "index": 17,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1814.2857142857142,
+          312.6984126984127
+        ],
+        [
+          2205.0632911392404,
+          1512.6582278481012
+        ]
+      ]
+    },
+    {
+      "index": 18,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1333.3333333333335,
+          191.66666666666669
+        ],
+        [
+          1785.0,
+          1445.0
+        ]
+      ]
+    },
+    {
+      "index": 19,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          781.0,
+          564.0
+        ],
+        [
+          887.0,
+          643.0
+        ]
+      ]
+    },
+    {
+      "index": 20,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          866.0714285714284,
+          133.92857142857142
+        ],
+        [
+          1432.142857142857,
+          1251.7857142857142
+        ]
+      ]
+    },
+    {
+      "index": 21,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": null,
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          728.5714285714286,
+          26.785714285714285
+        ],
+        [
+          1017.8571428571428,
+          976.7857142857142
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "extraction_timestamp": "2025-09-23T19:57:10.025105",
+  "total_entries_processed": 10,
+  "metadata_files_created": 10,
+  "source_annotation_files": [
+    "200.json",
+    "244.json"
+  ],
+  "dataset_path": "mm_search_benchmark/vqa_dataset",
+  "output_directory": "image_metadata",
+  "entry_indices_processed": [
+    96,
+    30,
+    23,
+    188,
+    15,
+    344,
+    229,
+    311,
+    263,
+    232
+  ]
+}

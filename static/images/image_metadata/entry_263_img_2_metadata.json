@@ -1,0 +1,343 @@
+{
+  "entry_index": 263,
+  "image_key": "img_2",
+  "num_images": 2,
+  "requires_image_understanding": false,
+  "is_valid": true,
+  "extraction_timestamp": "2025-09-23T19:56:55.393009",
+  "question": "What is the title of the video?",
+  "answer": [
+    "Who Can Identify as a Native American?"
+  ],
+  "choices": [
+    "How to Become a Native AmericanNative American HistoryIdentifying Native American TribesThe Rights of Native Americans"
+  ],
+  "question_zh": "视频的标题是什么？",
+  "answer_zh": [
+    "谁可以被认定为美洲原住民？"
+  ],
+  "regex": "(?i)\\bwho\\s+can\\s+identify\\s+as\\s+a\\s+native\\s+american\\?\\b",
+  "text_criteria": "Any answer that correctly states the title of the video as 'Who Can Identify as a Native American?' is correct.",
+  "original_filename": "youtube_videos.csv",
+  "screenshots_dir": "data/screenshots_youtube_masked",
+  "video_url": "https://www.youtube.com/watch?v=ZBQPks1zb3A&ab_channel=PBSOrigins",
+  "time_points": [
+    "8'0",
+    "5'58"
+  ],
+  "category": "电视台的非新闻类节目",
+  "search_query": "local history culture show",
+  "question_type": "",
+  "source": "",
+  "arxiv_id": "",
+  "content_keywords": "",
+  "reasoning": "",
+  "processed_at": "2025-06-26 13:17:25",
+  "model_used": "gpt-4o",
+  "original_image_paths": [
+    "data/screenshots_youtube_masked/114_480s.png",
+    "data/screenshots_youtube_masked/114_358s.png"
+  ],
+  "masked_image_paths": [
+    "data/screenshots_youtube_masked/114_480s.png",
+    "data/screenshots_youtube_masked/114_358s.png"
+  ],
+  "annotation_count": 16,
+  "annotation_summary": {
+    "total_rectangles": 16,
+    "annotation_labels": [
+      "矩形"
+    ],
+    "has_descriptions": false
+  },
+  "annotations": [
+    {
+      "index": 1,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          70.632911392405,
+          110.12658227848101
+        ],
+        [
+          373.16455696202524,
+          246.83544303797467
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          227.5949367088607,
+          307.59493670886076
+        ],
+        [
+          808.6075949367087,
+          440.50632911392404
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          201.1764705882353,
+          443.2941176470588
+        ],
+        [
+          842.8571428571429,
+          1458.4761904761906
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          570.7317073170732,
+          1417.8861788617887
+        ],
+        [
+          795.1219512195122,
+          1449.5934959349593
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1055.0,
+          574.6666666666666
+        ],
+        [
+          1571.6666666666667,
+          1214.6666666666665
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1080.0,
+          1230.0
+        ],
+        [
+          1258.0,
+          1408.0
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1271.0,
+          1243.0
+        ],
+        [
+          1636.0,
+          1401.0
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1654.6666666666667,
+          1400.6666666666667
+        ],
+        [
+          1738.6666666666667,
+          1429.3333333333333
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1397.659574468085,
+          561.6170212765958
+        ],
+        [
+          1551.9148936170213,
+          745.6595744680851
+        ]
+      ]
+    },
+    {
+      "index": 10,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1218.936170212766,
+          542.468085106383
+        ],
+        [
+          1385.9574468085107,
+          660.5531914893617
+        ]
+      ]
+    },
+    {
+      "index": 11,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1346.595744680851,
+          448.8510638297873
+        ],
+        [
+          1777.4468085106382,
+          1136.0851063829787
+        ]
+      ]
+    },
+    {
+      "index": 12,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1875.095541401274,
+          287.10828025477707
+        ],
+        [
+          2295.477707006369,
+          338.70063694267515
+        ]
+      ]
+    },
+    {
+      "index": 13,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1927.433628318584,
+          352.9557522123895
+        ],
+        [
+          2242.5742574257424,
+          1236.6336633663366
+        ]
+      ]
+    },
+    {
+      "index": 14,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          2187.128712871287,
+          288.1188118811881
+        ],
+        [
+          2549.861111111111,
+          1240.2222222222222
+        ]
+      ]
+    },
+    {
+      "index": 15,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1872.8813559322034,
+          1243.2203389830509
+        ],
+        [
+          2609.420289855072,
+          1382.4927536231883
+        ]
+      ]
+    },
+    {
+      "index": 16,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1908.6956521739128,
+          1394.086956521739
+        ],
+        [
+          2578.9855072463765,
+          1443.3623188405795
+        ]
+      ]
+    }
+  ]
+}

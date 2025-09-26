@@ -155,17 +155,17 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (Coming Soon)</span>
+                  <span>Code</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/mmsearch-plus/MMSearch-Plus"
+                <a href="https://huggingface.co/datasets/Cie1/MMSearch-Plus"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data (Coming Soon)</span>
+                  <span>Data</span>
                   </a>
             </div>
 
@@ -175,7 +175,6 @@
     </div>
   </div>
 </section>
-
 
 
 <section class="section" id="abstract">
@@ -195,13 +194,14 @@
             Through extensive evaluation of state-of-the-art models including o3, Gemini-2.5-Pro, GPT-5, and Qwen-2.5-VL-72B-Instruct across different search modes (without search, image search, and full rollout), we demonstrate the substantial challenges posed by provenance-aware multimodal search. Our results reveal significant performance gaps and provide insights into the reasoning trajectories and error patterns of current multimodal browsing agents.
           </p> -->
           <p>
-            Large multimodal language models (MLLMs) are increasingly deployed as web agents, yet many multimodal browsing benchmarks can be solved by shallow, fixed workflows that lean on high-recall image search and nearby text—masking the genuinely multimodal challenges of fine-grained visual reasoning, provenance verification, and long-horizon tool use.
+            Existing multimodal browsing benchmarks often fail to require genuine multimodal reasoning, as many tasks can be solved with text-only heuristics without vision-in-the-loop verification. 
           </p>
           <p>
-            We introduce <strong>MMSearch-Plus</strong>, a benchmark of 311 tasks that highly demands multimodal understanding while preserving the difficulty profile of strong text-only browsing suites. Each item is constructed to contain multiple weak, localized visual signals that must be extracted, propagated through iterative text–image search, and cross-validated under retrieval noise before answering. Our curation procedure, Spatial–Temporal Extrapolation, seeds questions whose answers require extrapolating from spatial cues (micro-text, part-level appearance, layouts, signage) and temporal traces (broadcast overlays, seasonal context) to out-of-image facts such as events, dates, and venues.
+            We introduce <strong>MMSearch-Plus</strong>, a 311-task benchmark that enforces multimodal understanding by requiring extraction and propagation of fine-grained visual cues through iterative image–text retrieval and cross-validation under retrieval noise. Our curation procedure seeds questions whose answers require extrapolating from spatial cues and temporal traces to out-of-image facts such as events, dates, and venues.
+Beyond the dataset, we provide a model-agnostic agent framework with standard browsing tools and a set-of-mark (SoM) module, which lets the agent place marks, crop subregions, and launch targeted image/text searches. SoM enables provenance-aware zoom-and-retrieve and improves robustness in multi-step reasoning.
           </p>
           <p>
-            We provide a model-agnostic agent framework with browsing tools, and evaluate a range of closed and open MLLMs. The strongest agent (o3) attains 15.1% without search and 36.0% accuracy with rollout under our framework, while a strong open-source model (Qwen-2.5-VL-72B-Instruct) achieves 0.0% without search and 6.9% after 20 rounds of search. Beyond answer accuracy, we assess bounding-box production and cropped-image search, and conduct an error analysis that surfaces failures in source verification, part-based reasoning, and long-horizon planning.
+            We evaluated closed- and open-source MLLMs in this framework. The strongest system achieves an end-to-end accuracy of 36.0%, and integrating SoM produces consistent gains in multiple settings, with improvements up to +3.9 points. From failure analysis, we observe recurring errors in locating relevant webpages and distinguishing between visually similar events. These results underscore the challenges of real-world multimodal search and establish MMSearch-Plus as a rigorous benchmark for advancing agentic MLLMs.
           </p>
           
         </div>
@@ -255,9 +255,27 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <!-- Closed-source LMMs -->
+                  <!-- Human -->
                   <tr style="background-color: #f5f5f5;">
-                    <td colspan="11"><strong>Closed-source LMMs</strong></td>
+                    <td colspan="12"><strong>Human</strong></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Browser</td>
+                    <td>22.8</td>
+                    <td>20.3</td>
+                    <td>25.9</td>
+                    <td>20.0</td>
+                    <td>25.0</td>
+                    <td>19.4</td>
+                    <td>16.1</td>
+                    <td>31.6</td>
+                    <td>35.3</td>
+                    <td>34.0</td>
+                    <td>18.0</td>
+                  </tr>
+                  <!-- Closed-source MLLMs -->
+                  <tr style="background-color: #f5f5f5;">
+                    <td colspan="12"><strong>Closed-source MLLMs</strong></td>
                   </tr>
                   <tr>
                     <td><b class="">o3 (2025-04-16)</b></td>
@@ -292,8 +310,8 @@
                     <td>0.0</td>
                   </tr>
                   <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Full Rollout 🥇</b></td>
-                    <td><b>36.0</b></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Full Rollout 🥈</b></td>
+                    <td>36.0</td>
                     <td>35.9</td>
                     <td>24.1</td>
                     <td>50.0</td>
@@ -304,6 +322,52 @@
                     <td>29.4</td>
                     <td>54.3</td>
                     <td>28.1</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Full Rollout + SoM 🥇</b></td>
+                    <td><b>37.7</b></td>
+                    <td>45.3</td>
+                    <td>29.6</td>
+                    <td>46.0</td>
+                    <td>45.0</td>
+                    <td>45.7</td>
+                    <td>16.1</td>
+                    <td>26.3</td>
+                    <td>29.4</td>
+                    <td>62.8</td>
+                    <td>26.9</td>
+                  </tr>
+                  <tr>
+                    <td><b class="">GPT-5</b></td>
+                    <td colspan="10"></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Without Search</td>
+                    <td>10.3</td>
+                    <td>21.9</td>
+                    <td>7.4</td>
+                    <td>4.0</td>
+                    <td>7.5</td>
+                    <td>8.3</td>
+                    <td>0.0</td>
+                    <td>5.3</td>
+                    <td>15.8</td>
+                    <td>27.7</td>
+                    <td>2.8</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Image Search</td>
+                    <td>16.4</td>
+                    <td>25.0</td>
+                    <td>11.1</td>
+                    <td>14.0</td>
+                    <td>22.5</td>
+                    <td>19.4</td>
+                    <td>3.2</td>
+                    <td>0.0</td>
+                    <td>29.4</td>
+                    <td>50.0</td>
+                    <td>1.8</td>
                   </tr>
                   <tr>
                     <td><b class="">Gemini-2.5-Pro</b></td>
@@ -338,8 +402,8 @@
                     <td>0.0</td>
                   </tr>
                   <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Full Rollout 🥈</b></td>
-                    <td><b>23.8</b></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Full Rollout</td>
+                    <td>23.8</td>
                     <td>39.1</td>
                     <td>14.8</td>
                     <td>12.0</td>
@@ -350,6 +414,20 @@
                     <td>29.4</td>
                     <td>46.8</td>
                     <td>13.8</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Full Rollout + SoM 🥉</b></td>
+                    <td><b>27.7</b></td>
+                    <td>40.6</td>
+                    <td>22.2</td>
+                    <td>24.0</td>
+                    <td>25.0</td>
+                    <td>33.3</td>
+                    <td>19.4</td>
+                    <td>15.8</td>
+                    <td>29.4</td>
+                    <td>54.3</td>
+                    <td>16.1</td>
                   </tr>
                   <tr>
                     <td><b class="">GPT-5</b></td>
@@ -370,7 +448,7 @@
                     <td>2.8</td>
                   </tr>
                   <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Image Search 🥉</b></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Image Search</td>
                     <td><b>16.4</b></td>
                     <td>25.0</td>
                     <td>11.1</td>
@@ -383,9 +461,9 @@
                     <td>50.0</td>
                     <td>1.8</td>
                   </tr>
-                  <!-- Open-source LMMs -->
+                  <!-- Open-source MLLMs -->
                   <tr style="background-color: #f5f5f5;">
-                    <td colspan="11"><strong>Open-source LMMs</strong></td>
+                    <td colspan="12"><strong>Open-source MLLMs</strong></td>
                   </tr>
                   <tr>
                     <td><b class="">Qwen-2.5-VL-72B-Instruct</b></td>
@@ -406,7 +484,7 @@
                     <td>0.0</td>
                   </tr>
                   <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="">Image Search</b></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Image Search</td>
                     <td><b>13.5</b></td>
                     <td>20.3</td>
                     <td>7.4</td>
@@ -433,10 +511,24 @@
                     <td>17.0</td>
                     <td>1.4</td>
                   </tr>
+                  <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Full Rollout + SoM</td>
+                    <td>7.1</td>
+                    <td>10.9</td>
+                    <td>3.7</td>
+                    <td>4.0</td>
+                    <td>10.0</td>
+                    <td>5.6</td>
+                    <td>6.5</td>
+                    <td>5.3</td>
+                    <td>11.8</td>
+                    <td>18.1</td>
+                    <td>2.3</td>
+                  </tr>
                 </tbody>
               </table>
 
-          <i>Models are organized by closed-source and open-source LMMs. Each model shows results for different search modes: Without Search, Image Search, and Full Rollout. The best performing configuration for each model is highlighted with medals.</i>
+          <i>Models are organized by closed-source and open-source MLLMs. Each model shows results for different search modes: Without Search, Image Search, Full Rollout, and Full Rollout + SoM (Set-of-Marks). The best performing configuration for each model is highlighted with medals.</i>
 
         </div>
 
@@ -635,6 +727,101 @@
       </div>
     </div>
   </div>
+  
+  <!-- SET-OF-MARK SECTION -->
+<section class="section" id="set-of-mark">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Set-of-Mark (SoM) Visualizations</h2>
+    <div class="content has-text-justified">
+      <p>
+        The Set-of-Mark (SoM) module enhances our multimodal browsing framework by enabling agents to place marks, crop subregions, and launch targeted searches. Below are examples showing how SoM annotations help identify and extract fine-grained visual cues that are crucial for answering complex questions requiring spatial-temporal reasoning.
+      </p>
+    </div>
+
+    <div id="som-carousel" class="carousel results-carousel">
+      <div class="carousel-item">
+        <div class="box m-5" style="height: 600px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="content has-text-centered">
+            <img src="static/images/som_visualizations/entry_15_img_1_annotated.png" alt="Academic paper SoM visualization" style="max-width: 100%; max-height: 400px; object-fit: contain;"/>
+            <p><strong>Question:</strong> What is the title of this paper?</p>
+            <p><strong>Answer:</strong> MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models</p>
+            <p class="is-size-7 has-text-grey"><em>This example demonstrates how SoM helps identify and extract text regions containing the paper title from an academic document figure.</em></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="box m-5" style="height: 600px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="content has-text-centered">
+            <img src="static/images/som_visualizations/entry_188_img_1_annotated.png" alt="Fashion week SoM visualization" style="max-width: 100%; max-height: 400px; object-fit: contain;"/>
+            <p><strong>Question:</strong> In Paris Fashion Week, what brand did the person in the image represent? In which year did the event occur, and what is the event's name?</p>
+            <p><strong>Answer:</strong> StreetStyle Winter 2025 Hermes</p>
+            <p class="is-size-7 has-text-grey"><em>SoM annotations help locate brand identifiers, temporal cues, and event context scattered across the image.</em></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="box m-5" style="height: 600px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="content has-text-centered">
+            <img src="static/images/som_visualizations/entry_229_img_1_annotated.png" alt="Gaming interface SoM visualization" style="max-width: 100%; max-height: 400px; object-fit: contain;"/>
+            <p><strong>Question:</strong> What is the name of the previous level?</p>
+            <p><strong>Answer:</strong> Exercise Hall</p>
+            <p class="is-size-7 has-text-grey"><em>The SoM framework identifies UI elements and navigation context to extract level progression information.</em></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="box m-5" style="height: 600px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="content has-text-centered">
+            <img src="static/images/som_visualizations/entry_23_img_1_annotated.png" alt="Sports match SoM visualization" style="max-width: 100%; max-height: 400px; object-fit: contain;"/>
+            <p><strong>Question:</strong> What was the final score of the match shown in the image?</p>
+            <p><strong>Answer:</strong> 13-11</p>
+            <p class="is-size-7 has-text-grey"><em>SoM helps locate and extract score information from sports broadcast overlays and scoreboards.</em></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="box m-5" style="height: 600px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="content has-text-centered">
+            <img src="static/images/som_visualizations/entry_263_img_2_annotated.png" alt="Video title SoM visualization" style="max-width: 100%; max-height: 400px; object-fit: contain;"/>
+            <p><strong>Question:</strong> What is the title of the video?</p>
+            <p><strong>Answer:</strong> Who Can Identify as a Native American?</p>
+            <p class="is-size-7 has-text-grey"><em>This example shows how SoM identifies title elements in video interfaces and content headers.</em></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="box m-5" style="height: 600px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="content has-text-centered">
+            <img src="static/images/som_visualizations/entry_344_img_1_annotated.png" alt="Sports assist SoM visualization" style="max-width: 100%; max-height: 400px; object-fit: contain;"/>
+            <p><strong>Question:</strong> Who assisted this goal?</p>
+            <p><strong>Answer:</strong> Philipp Lahm</p>
+            <p class="is-size-7 has-text-grey"><em>SoM enables extraction of player information and match statistics from sports footage, requiring cross-validation with external sources.</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content has-text-justified mt-5">
+      <p>
+        These examples illustrate how the Set-of-Mark module enables provenance-aware search by:
+      </p>
+      <ul>
+        <li><strong>Fine-grained region marking:</strong> Identifying specific visual elements that contain relevant information</li>
+        <li><strong>Spatial reasoning:</strong> Understanding layout and positional relationships between elements</li>
+        <li><strong>Temporal context extraction:</strong> Capturing time-sensitive information from broadcasts and dynamic content</li>
+        <li><strong>Cross-modal validation:</strong> Linking visual cues to textual information for verification</li>
+      </ul>
+      <p>
+        The SoM annotations demonstrate the complexity of real-world multimodal reasoning tasks where answers cannot be obtained through simple text-based heuristics but require genuine understanding of visual content combined with external knowledge retrieval.
+      </p>
+    </div>
+  </div>
+</section>
 
   <div class="columns is-centered m-6">
     <div class="column is-full has-text-centered content" id="exp-results">
@@ -791,6 +978,7 @@
     </div>
   </div>
 </section>
+
 
 
 <section class="section" id="concurrent-work">

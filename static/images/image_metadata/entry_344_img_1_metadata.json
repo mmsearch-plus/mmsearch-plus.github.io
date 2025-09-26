@@ -1,0 +1,354 @@
+{
+  "entry_index": 344,
+  "image_key": "img_1",
+  "num_images": 1,
+  "requires_image_understanding": true,
+  "is_valid": true,
+  "extraction_timestamp": "2025-09-23T19:56:04.537050",
+  "question": "Who assisted this goal?",
+  "answer": [
+    "Philipp Lahm"
+  ],
+  "choices": [],
+  "question_zh": "该进球是谁助攻的？",
+  "answer_zh": [
+    "菲利普·拉姆 (Philipp Lahm)"
+  ],
+  "regex": "",
+  "text_criteria": "https://www.bilibili.com/video/BV1FL411p73o/?share_source=copy_web&vd_source=24fbcc831f0071e971bc0fa0761e4524&t=279\nhttps://www.transfermarkt.com/brazil_germany/index/spielbericht/2464545\n该球是本场比赛德国队的第三个进球，由托尼克罗斯打进，菲利普拉姆助攻",
+  "original_filename": "0810_entry_12",
+  "screenshots_dir": "0810/samples-0810",
+  "video_url": "",
+  "time_points": [],
+  "category": "",
+  "search_query": "",
+  "question_type": "",
+  "source": "0810",
+  "arxiv_id": "",
+  "content_keywords": "",
+  "reasoning": "https://www.bilibili.com/video/BV1FL411p73o/?share_source=copy_web&vd_source=24fbcc831f0071e971bc0fa0761e4524&t=279\nhttps://www.transfermarkt.com/brazil_germany/index/spielbericht/2464545\n该球是本场比赛德国队的第三个进球，由托尼克罗斯打进，菲利普拉姆助攻",
+  "processed_at": "2025-08-14T10:35:25.537956",
+  "model_used": "0810_import",
+  "original_image_paths": [
+    "0810/samples-0810/12.png"
+  ],
+  "masked_image_paths": [
+    "0810/samples-0810/12.png"
+  ],
+  "annotation_count": 17,
+  "annotation_summary": {
+    "total_rectangles": 17,
+    "annotation_labels": [
+      "矩形"
+    ],
+    "has_descriptions": false
+  },
+  "annotations": [
+    {
+      "index": 1,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          10.518867924528386,
+          200.32075471698118
+        ],
+        [
+          376.556603773585,
+          287.11320754716985
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          590.7075471698114,
+          194.66037735849062
+        ],
+        [
+          1177.5,
+          278.622641509434
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          187.1244635193133,
+          321.88841201716735
+        ],
+        [
+          213.73390557939913,
+          358.3690987124463
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          540.3433476394849,
+          284.12017167381975
+        ],
+        [
+          571.6738197424893,
+          316.7381974248927
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          884.8717948717949,
+          319.2307692307692
+        ],
+        [
+          908.5897435897435,
+          350.64102564102564
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          171.11111111111111,
+          318.88888888888886
+        ],
+        [
+          227.22222222222223,
+          372.77777777777777
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          518.3333333333334,
+          401.66666666666663
+        ],
+        [
+          575.5555555555555,
+          424.44444444444446
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          518.8888888888889,
+          271.1111111111111
+        ],
+        [
+          586.6666666666666,
+          371.6666666666667
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          870.0,
+          406.1111111111111
+        ],
+        [
+          946.6666666666666,
+          458.88888888888886
+        ]
+      ]
+    },
+    {
+      "index": 10,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          868.8888888888889,
+          309.44444444444446
+        ],
+        [
+          925.5555555555555,
+          367.77777777777777
+        ]
+      ]
+    },
+    {
+      "index": 11,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          913.3333333333333,
+          226.11111111111111
+        ],
+        [
+          928.8888888888889,
+          244.44444444444443
+        ]
+      ]
+    },
+    {
+      "index": 12,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1095.5555555555554,
+          327.22222222222223
+        ],
+        [
+          1111.6666666666667,
+          343.88888888888886
+        ]
+      ]
+    },
+    {
+      "index": 13,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          1092.2222222222222,
+          257.77777777777777
+        ],
+        [
+          1132.7777777777778,
+          357.22222222222223
+        ]
+      ]
+    },
+    {
+      "index": 14,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          901.1111111111111,
+          212.22222222222223
+        ],
+        [
+          948.3333333333333,
+          308.88888888888886
+        ]
+      ]
+    },
+    {
+      "index": 15,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          118.9473684210526,
+          118.93421052631578
+        ],
+        [
+          209.73684210526315,
+          203.80263157894734
+        ]
+      ]
+    },
+    {
+      "index": 16,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          510.22727272727275,
+          46.727272727272755
+        ],
+        [
+          1379.318181818182,
+          323.0909090909091
+        ]
+      ]
+    },
+    {
+      "index": 17,
+      "label": "矩形",
+      "shape_type": "rectangle",
+      "description": "",
+      "group_id": null,
+      "flags": {},
+      "points": [
+        [
+          945.6818181818182,
+          340.3636363636364
+        ],
+        [
+          1056.5909090909092,
+          522.1818181818181
+        ]
+      ]
+    }
+  ]
+}
