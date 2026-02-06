@@ -233,6 +233,11 @@ Beyond the dataset, we provide a model-agnostic agent framework with standard br
         <div class="content">
           <p class="mt-3">End-to-end results on the MMSearch<sup>+</sup> benchmark, across search modes. All numbers are accuracy (%).
           </p>
+          <div class="mt-4">
+            <img src="static/images/leaderboard.png"
+                 alt="Leaderboard visualization of MMSearch-Plus benchmark accuracy across models and search modes"
+                 style="max-width: 70%; height: auto;">
+          </div>
               <table class="js-sort-table" id="results">
                 <thead>
                   <tr>
@@ -325,7 +330,7 @@ Beyond the dataset, we provide a model-agnostic agent framework with standard br
                   </tr>
                   <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;<b class="best-score-text">Full Rollout + SoM 🥇</b></td>
-                    <td><b>37.7</b></td>
+                    <td><b>37.6</b></td>
                     <td>45.3</td>
                     <td>29.6</td>
                     <td>46.0</td>
@@ -449,7 +454,7 @@ Beyond the dataset, we provide a model-agnostic agent framework with standard br
                   </tr>
                   <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;Image Search</td>
-                    <td><b>16.4</b></td>
+                    <td>16.4</td>
                     <td>25.0</td>
                     <td>11.1</td>
                     <td>14.0</td>
@@ -524,6 +529,30 @@ Beyond the dataset, we provide a model-agnostic agent framework with standard br
                     <td>11.8</td>
                     <td>18.1</td>
                     <td>2.3</td>
+                  </tr>
+                  <!-- MLLM Agent Methods with own frameworks -->
+                  <tr style="background-color: #f5f5f5;">
+                    <td colspan="12"><strong>MLLM Agent Methods (Own Frameworks)</strong></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://osilly.github.io/Vision-DeepResearch/" target="_blank"><b>Qwen3-VL-8B-Instruct (Agentic)</b></a></td>
+                    <td>11.3</td>
+                    <td colspan="10"><i>Average score only reported</i></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://osilly.github.io/Vision-DeepResearch/" target="_blank"><b>Qwen3-VL-30B-A3B-Instruct (Agentic)</b></a></td>
+                    <td>10.0</td>
+                    <td colspan="10"><i>Average score only reported</i></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://osilly.github.io/Vision-DeepResearch/" target="_blank"><b>Vision-DeepResearch-8B</b></a></td>
+                    <td>20.4</td>
+                    <td colspan="10"><i>Average score only reported</i></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://osilly.github.io/Vision-DeepResearch/" target="_blank"><b class="best-score-text">Vision-DeepResearch-30B-A3B 🥉</b></a></td>
+                    <td><b>28.5</b></td>
+                    <td colspan="10"><i>Average score only reported</i></td>
                   </tr>
                 </tbody>
               </table>
